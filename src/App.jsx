@@ -80,7 +80,7 @@ function App() {
         {announcement}
       </div>
 
-      {gameWon && <Confetti width={windowSize.width} height={windowSize.height}/>}
+      {gameWon && <Confetti className="confetti" width={windowSize.width} height={windowSize.height}/>}
       <div aria-live="polite" className="sr-only">
         {gameWon && <p>Congratulations! You won! Press "New Game" to start again.</p>}
       </div>
